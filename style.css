@@ -1,0 +1,109 @@
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-light: hsl(0, 0%, 42%);
+    --gray-dark: hsl(0, 0%, 7%);
+}
+@font-face {
+    font-family: "Figtree";
+    src: url(Resources/assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Figtree";
+    src: url(Resources/assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Figtree";
+    src: url(Resources/assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+body{
+    background: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    padding: 15px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-dark);
+    box-shadow: 6px 6px 0px var(--gray-dark);
+    border-radius: 20px;
+    width: min(90%, 400px);
+    height: max(fit-content, 80vh);
+}
+.card > img{
+    border-radius: 12px;
+    width: 100%;
+}
+.card .content{
+    margin: 20px 0 20px 0;
+}
+.card .content label{
+    background-color: var(--yellow);
+    color: var(--gray-dark);
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.card .content p#date-published{
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--gray-dark);
+    font-size: .95rem;
+}
+.card .content p#title{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--gray-dark);
+    transition: .2s ease;
+    cursor: pointer;
+}
+.card .content p#title:hover{
+    color: var(--yellow);
+}
+.card .content p#content{
+    color: var(--gray-light);
+    line-height: 25px;
+}
+.card .footer{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.card .footer img{
+    width: 30px;
+}
+.card .footer label{
+    color: var(--gray-dark);
+    font-weight: 800;
+    font-size: .8rem;
+}
+.attribution { 
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
