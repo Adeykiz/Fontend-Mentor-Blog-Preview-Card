@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link to solution](https://github.com/Adeykiz/Fontend-Mentor-Blog-Preview-Card)
+- Live Site URL: [Link to live site](https://adeykiz.github.io/Fontend-Mentor-Blog-Preview-Card/)
 
 ## My process
 
